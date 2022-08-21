@@ -1,0 +1,25 @@
+{
+  "name": "reloader-notifier",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "watch:app": "cd src/app && yarn watch",
+    "watch:pop": "cd src/popup && yarn watch",
+    "watch:bg": "cd src/background && yarn watch",
+    "dev": "concurrently \"yarn watch:app\" \"yarn watch:bg\"",
+    "dev:popup": "cd src/popup && yarn dev"
+  },
+  "keywords": [
+    "chrome",
+    "reloader",
+    "extension"
+  ],
+  "author": "RK Anik",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.195"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outFile": "../../build/app.js"
+  },
+  "files": ["app.ts"],
+  "extends": "../../tsconfig.json"
+}
