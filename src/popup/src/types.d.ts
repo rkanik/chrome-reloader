@@ -1,3 +1,5 @@
+export * from "@@/common/types";
+
 export type HMR = [number, number, number];
 
 export type Interval = {
@@ -6,5 +8,5 @@ export type Interval = {
 };
 
 export type IntervalHMR = Interval & {
-   hmr: HMR;
-}
+  hmr: HMR;
+};

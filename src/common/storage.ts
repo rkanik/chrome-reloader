@@ -1,16 +1,23 @@
-const get = (key?: string) => {
+const get = <
+  T extends {
+    [key: string]: any;
+  }
+>(
+  key?: string,
+  fallback?: T
+): Promise<T | undefined> => {
   return new Promise((resolve) => {
     if (!key) {
       // Get full storage
-      return chrome.storage.sync.get((storage) => {
-        return resolve(storage);
+      return chrome?.storage?.sync?.get((storage) => {
+        return resolve(storage as T);
       });
     }
 
     // Get a specific key from storage
-    chrome.storage.sync.get(key, (storage) => {
+    chrome?.storage?.sync?.get(key, (storage) => {
       if (storage && storage[key]) resolve(storage[key]);
-      else resolve(undefined);
+      else resolve(fallback);
     });
   });
 };

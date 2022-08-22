@@ -1,3 +1,5 @@
+export * from "@@/common/consts";
+
 import type { Interval } from "@/types";
 
 export const INTERVALS: Interval[] = [
