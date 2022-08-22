@@ -1,4 +1,4 @@
-import type { HMR } from "./types";
+import type { HMR } from "@/types";
 
 export const msToHMR = (ms: number): HMR => {
   const h = Math.floor(ms / 1000 / 60 / 60);
