@@ -13,10 +13,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.6.7",
     "concurrently": "^7.3.0",
-    "vite-plugin-singlefile": "^0.11.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@types/node": "^18.7.9",
     "@vitejs/plugin-vue": "^3.0.3",
     "autoprefixer": "^10.4.8",
     "child_process": "^1.0.2",
