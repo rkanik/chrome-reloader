@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "watch": "nodemon --config nodemon.json",
-    "dev:popup": "concurrently \"yarn dev\" \"yarn build:popup\"",
+    "dev:popup": "concurrently \"yarn dev\" \"yarn watch\"",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },

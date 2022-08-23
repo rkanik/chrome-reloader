@@ -1,9 +1,7 @@
 import { Storage } from "../common";
 
-console.log("Hello App.js");
+console.log("Hello from BG");
 
 Storage.onChanged((storage) => {
-  console.log({ storage: storage });
+  console.log({ storage });
 });
-
-

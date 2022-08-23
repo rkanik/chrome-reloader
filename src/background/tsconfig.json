@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "outFile": "../../build/background.js"
-  },
-  "files": ["background.ts"],
-  "extends": "../../tsconfig.json"
-}
